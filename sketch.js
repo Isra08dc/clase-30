@@ -46,6 +46,7 @@ function draw(){
     background(backgroundImg);
     Engine.update(engine);
     //strokeWeight(4);
+
     box1.display();
     box2.display();
     ground.display();
@@ -74,4 +75,10 @@ function mouseDragged(){
 
 function mouseReleased(){
     slingshot.fly();
+}
+
+function keyPressed(){
+    if(KeyCode===32){
+    Slingshot.attach(bird.body);
+}
 }
